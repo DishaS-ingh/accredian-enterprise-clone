@@ -27,11 +27,11 @@ export default function Edge() {
                   key={index}
                   className="relative flex flex-col items-center text-center"
                 >
-                  <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg ring-4 ring-blue-100">
-                    <Icon className="h-9 w-9 text-blue-600" />
-                  </div>
+                  <div className="relative z-10 flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-lg ring-4 ring-blue-100">
+                      <Icon className="h-10 w-10 text-blue-600" />
+                    </div>
 
-                  <h3 className="mt-6 font-semibold text-lg">
+                  <h3 className="mt-5 text-xl font-semibold">
                     {item.title}
                   </h3>
 
