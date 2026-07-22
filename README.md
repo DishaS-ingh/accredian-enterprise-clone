@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Accredian Enterprise Clone
 
-## Getting Started
+A full-stack responsive clone of the Accredian Enterprise landing page built as part of the Full Stack Developer Intern Assignment.
 
-First, run the development server:
+## Live Demo
+
+🔗 https://accredian-enterprise-clone-tawny.vercel.app/
+
+## GitHub Repository
+
+🔗 https://github.com/DishaS-ingh/accredian-enterprise-clone
+
+---
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- MongoDB Atlas
+- Mongoose
+- Vercel
+
+---
+
+## Features
+
+- Responsive landing page
+- Reusable React component architecture
+- Enterprise enquiry (lead capture) form
+- Next.js API integration
+- MongoDB backend for storing enquiries
+- Responsive navigation and smooth scrolling
+- Mobile-friendly UI
+
+---
+
+## Setup Instructions
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/DishaS-ingh/accredian-enterprise-clone.git
+```
+
+2. Navigate to the project
+
+```bash
+cd accredian-enterprise-clone
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Create a `.env.local` file and add your MongoDB connection string
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+```
+
+5. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Approach Taken
 
-## Learn More
+- Built the application using reusable React components for each section of the landing page.
+- Implemented responsive layouts using Tailwind CSS.
+- Created a shared enquiry modal that can be opened from different sections.
+- Built a Next.js API route to process enquiry submissions.
+- Connected MongoDB Atlas using Mongoose to store lead information.
+- Deployed the application using Vercel.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## AI Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ChatGPT was used to assist with:
 
-## Deploy on Vercel
+- Initial project structure
+- Tailwind CSS styling
+- Responsive layout suggestions
+- API integration guidance
+- Debugging runtime issues
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+All generated code was reviewed, modified, tested, and integrated manually.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Improvements With More Time
+
+- Improve UI to achieve pixel-perfect accuracy with the original design.
+- Add animations and smoother transitions.
+- Improve accessibility (ARIA labels and keyboard navigation).
+- Optimize images and overall performance.
+- Add better form validation and user feedback.
+- Improve SEO with metadata and Open Graph tags.
+
+---
+
+## Author
+
+**Disha Singh**
+
+B.Tech Artificial Intelligence & Machine Learning
