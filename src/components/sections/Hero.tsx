@@ -1,66 +1,96 @@
 import Container from "../ui/Container";
 import Button from "../ui/Button";
-import { CheckCircle2 } from "lucide-react";
-import { GraduationCap } from "lucide-react";
+import { CheckCircle2, GraduationCap } from "lucide-react";
 import Image from "next/image";
 
 export default function Hero() {
   return (
-            <section
-          id="hero"
-          className="scroll-mt-28 bg-blue-50 py-16"
-        >
+    <section
+      id="hero"
+      className="scroll-mt-28 bg-blue-50 py-10 lg:py-16"
+    >
       <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="overflow-hidden rounded-[32px] bg-[#EEF5FF] shadow-lg">
 
-          {/* Left Side */}
-            <div className="min-h-[550px] rounded-3xl bg-white p-10 shadow-md">
-              <div className="flex h-full flex-col justify-center">
-                <h1 className="text-4xl font-bold leading-tight text-slate-900 md:text-5xl lg:text-6xl">
-                    Next-Gen Expertise
-                    <br />
-                    For Your Enterprise
-                  </h1>
-                <p className="mt-6 max-w-lg text-lg leading-8 text-slate-600">
-                    Empower your workforce with industry-focused learning programs designed
-                    to build practical skills, drive innovation, and accelerate business
-                    growth.
-                  </p>
-                  <div className="mt-8 space-y-4">
-                  <div className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600" />
-                    <span>Tailored learning solutions</span>
-                  </div>
+          <div className="grid items-center gap-8 px-6 py-8 md:px-10 md:py-10 lg:grid-cols-[1fr_0.9fr] lg:px-16 lg:py-14">
 
-                  <div className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600" />
-                    <span>Industry-leading experts</span>
-                  </div>
+            {/* Left Content */}
+            <div>
 
-                  <div className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600" />
-                    <span>Measurable business outcomes</span>
-                  </div>
-                </div>
-                <div className="mt-10">
-                    <Button>
-                      Enquire Now
-                    </Button>
-                  </div>
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-semibold text-blue-700 shadow-sm">
+                <GraduationCap className="h-4 w-4" />
+                Trusted by 200+ Enterprises
               </div>
+
+              <h1 className="text-4xl font-extrabold leading-tight text-slate-900 md:text-5xl lg:text-6xl">
+                Next-Gen{" "}
+                <span className="text-blue-600">
+                  Expertise
+                </span>
+
+                <br />
+
+                For Your{" "}
+                <span className="text-blue-600">
+                  Enterprise
+                </span>
+              </h1>
+
+              <p className="mt-8 max-w-xl text-lg leading-8 text-slate-700">
+                Empower your workforce with industry-focused learning programs
+                designed to build practical skills, drive innovation and
+                accelerate business growth.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-6">
+
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-6 w-6 text-green-600" />
+                  <span className="font-medium">
+                    Tailored Solutions
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-6 w-6 text-green-600" />
+                  <span className="font-medium">
+                    Industry Experts
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-6 w-6 text-green-600" />
+                  <span className="font-medium">
+                    Business Outcomes
+                  </span>
+                </div>
+
+              </div>
+
+              <div className="mt-10">
+                <Button>
+                  Enquire Now
+                </Button>
+              </div>
+
             </div>
 
-          {/* Right Side */}
-          <div className="flex items-center justify-center rounded-3xl bg-gradient-to-br from-blue-100 via-blue-50 to-white p-8">
+            {/* Right Image */}
+
+            <div className="flex items-end justify-center">
+
               <Image
                 src="/images/hero.webp"
                 alt="Enterprise Learning"
                 width={650}
                 height={650}
-                className="h-auto w-full max-w-[600px] object-contain"
                 priority
+                className="h-auto w-full max-w-[320px] md:max-w-[460px] lg:max-w-[620px] object-contain"
               />
+
             </div>
+
+          </div>
 
         </div>
       </Container>
