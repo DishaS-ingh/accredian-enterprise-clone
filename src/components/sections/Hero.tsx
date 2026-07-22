@@ -6,10 +6,10 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="bg-blue-50 py-16"
-    >
+            <section
+          id="hero"
+          className="scroll-mt-28 bg-blue-50 py-16"
+        >
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
 
