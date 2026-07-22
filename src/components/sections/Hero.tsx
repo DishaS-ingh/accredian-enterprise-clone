@@ -2,6 +2,7 @@ import Container from "../ui/Container";
 import Button from "../ui/Button";
 import { CheckCircle2 } from "lucide-react";
 import { GraduationCap } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -50,13 +51,16 @@ export default function Hero() {
             </div>
 
           {/* Right Side */}
-          <div className="flex h-full flex-col items-center justify-center rounded-3xl bg-gradient-to-br from-blue-100 via-blue-50 to-white">
-                <GraduationCap className="h-24 w-24 text-blue-500" />
-
-                <p className="mt-6 text-xl font-medium text-slate-500">
-                  Hero Illustration
-                </p>
-              </div>
+          <div className="flex items-center justify-center rounded-3xl bg-gradient-to-br from-blue-100 via-blue-50 to-white p-8">
+              <Image
+                src="/images/hero.webp"
+                alt="Enterprise Learning"
+                width={650}
+                height={650}
+                className="h-auto w-full max-w-[600px] object-contain"
+                priority
+              />
+            </div>
 
         </div>
       </Container>
