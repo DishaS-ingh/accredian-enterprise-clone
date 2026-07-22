@@ -4,7 +4,7 @@ A full-stack responsive clone of the Accredian Enterprise landing page built as 
 
 ## Live Demo
 
-🔗 https://accredian-enterprise-clone-tawny.vercel.app/
+🔗 [https://accredian-enterprise-clone-tawny.vercel.app/](https://accredian-enterprise-clone-tawny.vercel.app/)
 
 ## GitHub Repository
 
