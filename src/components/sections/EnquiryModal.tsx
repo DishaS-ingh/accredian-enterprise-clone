@@ -23,7 +23,9 @@ export default function EnquiryModal({ open, onClose }: Props) {
   if (!open) return null;
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     setForm({
       ...form,
@@ -73,13 +75,15 @@ export default function EnquiryModal({ open, onClose }: Props) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
-      <div className="w-full max-w-2xl rounded-xl bg-white p-8">
+      <div className="w-full max-w-2xl rounded-xl bg-white p-8 shadow-2xl">
         <div className="mb-6 flex items-center justify-between">
-          <h2 className="text-2xl font-bold">Contact Us</h2>
+          <h2 className="text-3xl font-bold text-gray-900">
+            Contact Us
+          </h2>
 
           <button
             onClick={onClose}
-            className="text-2xl font-bold"
+            className="text-2xl font-bold text-gray-600 hover:text-black"
           >
             ×
           </button>
@@ -92,7 +96,7 @@ export default function EnquiryModal({ open, onClose }: Props) {
             placeholder="Full Name"
             value={form.name}
             onChange={handleChange}
-            className="w-full rounded border p-3"
+            className="w-full rounded border border-gray-300 p-3 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
 
@@ -102,7 +106,7 @@ export default function EnquiryModal({ open, onClose }: Props) {
             placeholder="Email"
             value={form.email}
             onChange={handleChange}
-            className="w-full rounded border p-3"
+            className="w-full rounded border border-gray-300 p-3 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
 
@@ -111,7 +115,7 @@ export default function EnquiryModal({ open, onClose }: Props) {
             placeholder="Company"
             value={form.company}
             onChange={handleChange}
-            className="w-full rounded border p-3"
+            className="w-full rounded border border-gray-300 p-3 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
 
@@ -120,7 +124,7 @@ export default function EnquiryModal({ open, onClose }: Props) {
             placeholder="Phone"
             value={form.phone}
             onChange={handleChange}
-            className="w-full rounded border p-3"
+            className="w-full rounded border border-gray-300 p-3 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
 
@@ -128,7 +132,7 @@ export default function EnquiryModal({ open, onClose }: Props) {
             name="employees"
             value={form.employees}
             onChange={handleChange}
-            className="w-full rounded border p-3"
+            className="w-full rounded border border-gray-300 p-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           >
             <option value="">Company Size</option>
@@ -143,7 +147,7 @@ export default function EnquiryModal({ open, onClose }: Props) {
             placeholder="Training Interest"
             value={form.trainingInterest}
             onChange={handleChange}
-            className="w-full rounded border p-3"
+            className="w-full rounded border border-gray-300 p-3 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
 
@@ -153,13 +157,14 @@ export default function EnquiryModal({ open, onClose }: Props) {
             placeholder="Message"
             value={form.message}
             onChange={handleChange}
-            className="w-full rounded border p-3"
+            className="w-full rounded border border-gray-300 p-3 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
 
           <button
+            type="submit"
             disabled={loading}
-            className="w-full rounded bg-blue-600 p-3 font-semibold text-white hover:bg-blue-700"
+            className="w-full rounded bg-blue-600 p-3 font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
           >
             {loading ? "Submitting..." : "Submit"}
           </button>
