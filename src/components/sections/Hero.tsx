@@ -3,7 +3,11 @@ import Button from "../ui/Button";
 import { CheckCircle2, GraduationCap } from "lucide-react";
 import Image from "next/image";
 
-export default function Hero() {
+interface HeroProps {
+  openModal: () => void;
+}
+
+export default function Hero({ openModal }: HeroProps) {
   return (
     <section
       id="hero"
@@ -68,7 +72,7 @@ export default function Hero() {
               </div>
 
               <div className="mt-10">
-                <Button>
+                <Button onClick={openModal}>
                   Enquire Now
                 </Button>
               </div>

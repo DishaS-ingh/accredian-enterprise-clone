@@ -8,7 +8,11 @@ import Button from "../ui/Button";
 import Container from "../ui/Container";
 import { navLinks } from "@/constants/navigation";
 
-export default function Navbar() {
+interface NavbarProps {
+  openModal: () => void;
+}
+
+export default function Navbar({ openModal }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   const [scrolled, setScrolled] = useState(false);
@@ -95,7 +99,9 @@ export default function Navbar() {
           {/* Desktop Button */}
 
           <div className="hidden lg:block">
-            <Button>Enquire Now</Button>
+            <Button onClick={openModal}>
+                Enquire Now
+              </Button>
           </div>
 
           {/* Mobile Button */}

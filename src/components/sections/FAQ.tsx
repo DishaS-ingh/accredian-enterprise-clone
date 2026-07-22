@@ -5,7 +5,11 @@ import { ChevronDown } from "lucide-react";
 import Container from "../ui/Container";
 import { faqs } from "@/constants/faq";
 
-export default function FAQ() {
+interface FAQProps {
+  openModal: () => void;
+}
+
+export default function FAQ({ openModal }: FAQProps) {
   const [open, setOpen] = useState(0);
 
   return (
