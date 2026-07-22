@@ -3,7 +3,7 @@ import { howItWorks } from "@/constants/howItWorks";
 
 export default function HowItWorks() {
   return (
-    <section id="how" className="py-20">
+    <section id="how-it-works" className="py-20">
       <Container>
         <div className="text-center">
           <h2 className="text-4xl font-bold">
