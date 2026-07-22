@@ -27,7 +27,7 @@ export default function CatFramework() {
                 key={item.title}
                 className="relative rounded-3xl bg-white p-10 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
-                <div className="absolute -top-5 left-1/2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-blue-600 text-white font-bold shadow-lg">
+                <div className="absolute -top-5 left-1/2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-blue-600 text-gray-200 font-bold shadow-lg">
                   {index + 1}
                 </div>
 

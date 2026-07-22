@@ -74,7 +74,7 @@ export default function EnquiryModal({ open, onClose }: Props) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/50 p-4">
       <div className="w-full max-w-2xl rounded-xl bg-white p-8 shadow-2xl">
         <div className="mb-6 flex items-center justify-between">
           <h2 className="text-3xl font-bold text-gray-900">
@@ -164,7 +164,7 @@ export default function EnquiryModal({ open, onClose }: Props) {
           <button
             type="submit"
             disabled={loading}
-            className="w-full rounded bg-blue-600 p-3 font-semibold text-white hover:bg-blue-700 disabled:opacity-50"
+            className="w-full rounded bg-blue-600 p-3 font-semibold text-gray-200 hover:bg-blue-700 disabled:opacity-50"
           >
             {loading ? "Submitting..." : "Submit"}
           </button>

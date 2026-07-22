@@ -29,7 +29,7 @@ export default function HowItWorks() {
                 </div>
 
                 <div className="mt-6 flex h-20 w-20 items-center justify-center rounded-full bg-blue-600">
-                  <Icon className="h-10 w-10 text-white" />
+                  <Icon className="h-10 w-10 text-gray-200" />
                 </div>
 
                 <h3 className="mt-8 text-2xl font-bold">

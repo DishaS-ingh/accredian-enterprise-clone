@@ -29,7 +29,7 @@ export default function Edge() {
           className="group relative flex flex-col items-center text-center"
         >
           {/* Step Number */}
-          <div className="absolute -top-3 z-20 flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white">
+          <div className="absolute -top-3 z-20 flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-gray-200">
             {index + 1}
           </div>
 
